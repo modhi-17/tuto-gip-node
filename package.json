@@ -4,11 +4,21 @@
   "description": "tuto node gip",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "prestart": "npm run build",
+    "start": "node built/index.js",
+    "start:main": "npm run prestart && node built/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "modhi",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.3.3",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "fastify": "^4.19.1",
+    "pino": "^8.14.1"
   }
 }
