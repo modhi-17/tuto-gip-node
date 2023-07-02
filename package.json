@@ -1,0 +1,11 @@
+{
+  "name": "tuto-gip-node",
+  "version": "1.0.0",
+  "description": "tuto node gip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "modhi",
+  "license": "ISC"
+}
